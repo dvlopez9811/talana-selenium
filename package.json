@@ -1,0 +1,25 @@
+{
+  "name": "selenium-poc",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "talana-entrada": "env HORA=entrada mocha ./talana.js --timeout 20000",
+    "talana-salida": "env HORA=salida mocha ./talana.js --timeout 20000"
+
+  },
+  "dependencies": {
+    "chromedriver": "^100.0.0",
+    "geckodriver": "^3.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "mocha": "^9.2.0",
+    "selenium-webdriver": "^4.1.1",
+    "vite": "^2.8.0"
+  }
+}
